@@ -54,7 +54,7 @@ fi
 
 for i in $( seq 1 $NUMFILES)
 do
-	/home/toor/hw-unfucker/assignment-2-Netex135/finder-app/writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+	./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
 done
 
 OUTPUTSTRING=$(./finder.sh  "$WRITEDIR" "$WRITESTR")
